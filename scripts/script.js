@@ -51,7 +51,7 @@ function determinarAño () {
         año.textContent = "es un año comun";
     } else if( dias == 366 ){
         año.textContent ="El año es bisiesto";
-    } else if(dias > 366 || dias < 355 ){
+    } else if( dias > 366 || dias < 365 ){
         año.textContent =`no existe un año con ${dias} ${añosSingularPrural}`;
     }
 }
