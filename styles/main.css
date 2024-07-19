@@ -1,0 +1,142 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css");
+
+:root{
+    --ancho-maximo: 940px;
+    --padding-container: 10px 20px;
+    --border-primary: .1px solid rgb(153, 152, 152, .2);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #222;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    padding: var(--padding-container);
+    border-bottom: var(--border-primary);
+}
+
+.titulo_container{
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-size: 2em;
+}
+
+.repositorio{
+    text-decoration: none;
+    cursor: pointer;
+    color: #0bff06;
+    border: var(--border-primary);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.repositorio:hover {
+    color: #0dc509;
+}
+
+
+
+main{
+    padding: 50px 20px;
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    row-gap: 30px;
+    display: grid;
+}
+
+.articulo{
+    display: grid;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+
+.ejercicio__container{
+    padding: 20px 0;
+    display: grid;
+    gap: 10px;
+}
+
+.ejercicio_demo{
+    display: grid;
+    gap: 10px;
+}
+
+.formulario {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#input_dias,
+#fechaNacimiento{
+    color: #000000;
+    font-weight: 500;
+    border: none;
+    outline-color: #028b00;
+    padding: 4px 7px;
+    border-radius: 4px;
+}
+
+.año_container{
+    display: grid;
+    max-width: 420px;
+    gap: 15px;
+}
+
+.btn_demo{
+    background-color: #028b00;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.btn_demo:hover{
+    background-color: #076d07;
+}
+
+.btn_demo:active{
+    background-color: #0b5c0c;
+}
+
+footer{
+    border-top: var(--border-primary);
+    padding: var(--padding-container);
+}
+footer p{
+    text-align: center;
+    font-size: .6em;
+}
+
+@media (width < 500px ){
+    
+    main{
+        padding: 20px;
+    }
+
+
+    .repositorio{
+        display: none;
+    }
+
+    .formulario {
+        display: grid;
+    }
+}

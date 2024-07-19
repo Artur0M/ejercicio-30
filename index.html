@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios 30</title>
+    <link rel="shortcut icon" href="https://zajuna.sena.edu.co/img/logos/sena-logo.svg" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <section class="titulo_container">
+            <h1 class="titulo">Ejercicios Sena</h1>
+            <a class="repositorio" href="https://github.com/Artur0M/ejercicio-30">Repositorio</a>
+        </section>
+    </header>
+    <main>
+        <article class="articulo">
+            <h2>Evidencia #30: Fundamentos de programación estructurada y estructuras cíclicas</h2>
+            <p>
+                Esta evidencia se centra en consolidar los conceptos relacionados con las metodologías de algoritmos y sus tres fases: análisis, diseño e implementación. Respecto a la implementación se aborda los seudocódigos y diagramas de flujo.
+            </p>
+            <p>
+                Para su desarrollo es importante la lectura del componente formativo. Debe construir un documento donde registre el análisis, diseño e implementación de algoritmos que permitan resolver los siguientes problemas:
+
+            </p>
+        </article>
+        <section class="ejercicio__container">
+            <h3>
+                1. Algoritmo que a partir de una fecha de nacimiento y una fecha actual determine la edad en años actual de una persona.
+            </h3>
+            <pre><code class="eje_1 language-js" id="code">
+                <!-- El codigo se renderiza aqui -->
+            </code></pre>
+            <div class="ejercicio_demo">
+                <h4>Calculadora de Edad</h4>
+                <div class="formulario">
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento">
+                    <button onclick="mostrarEdad()" class="btn_demo">Calcular Edad</button>
+                </div>
+                <p id="resultado"></p>
+            </div>
+        </section>
+        <section class="ejercicio__container">
+            <h3>
+                2. Algoritmo que permita determinar si un año indicado es o no un año bisiesto.
+            </h3>
+            <pre><code class="eje_2 language-js">
+                <!-- El codigo se renderiza aqui -->
+            </code></pre>
+            <label>Cuantos dias tiene el año que desea solicitar:</label>
+            <div class="año_container">
+                <input id="input_dias" type="number" placeholder="ingrese dias del año">
+                <button class="btn_demo" onclick="determinarAño()">Determinar año</button>
+            </div>
+            <p class="area_año"></p>
+        </section>
+        <section class="container"></section>
+    </main>
+    <footer>
+        <p>Deasarrollado por Luis Arturo Ospino</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
